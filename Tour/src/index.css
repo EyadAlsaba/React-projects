@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body {
+  background-color: #eee;
+  color: #333;
+  letter-spacing: 1.2px;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.toggle-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+.card-box {
+  width: 40rem;
+  transition: 0.5s;
+}
+.card-box:hover {
+  transform: scale(1.02, 1.02);
+  transition: 0.5s;
+}

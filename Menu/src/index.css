@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body,
+#root {
+  height: 100vh;
+  background-color: #eee;
+  color: #333;
+}
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+article {
+  width: 35%;
+}
+
+img {
+  width: 220px;
+  height: 180px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+@media (max-width: 1020px) {
+  .info {
+    width: 100%;
+  }
+}

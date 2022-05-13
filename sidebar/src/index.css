@@ -1,0 +1,64 @@
+:root{
+  --lightGrey: #f2f2f2
+  --grey: #404040
+}
+body {
+  background-color: var(--lightGrey);
+  color: var(--grey);
+}
+button{
+  width: fit-content !important;
+}
+button:focus{
+  box-shadow: none !important;
+}
+a{
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+a:hover{
+  color: #eee;
+  transition: 0.4s;
+  transform: scale(1.5,1.5);
+}
+ul li {
+  list-style: none;
+}
+.nav-btn{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+.modal-btn{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.modal{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  background:transparent;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+  transition: ease-in 1s;
+}
+.show-sidebar {
+  transform: translate(0);
+  transition: ease-in 1s;
+}
+@keyframes bounce {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.2)}
+  100% {transform: scale(1)}
+}

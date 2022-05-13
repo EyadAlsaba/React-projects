@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+  --lightGrey: #f2f2f2
+  --grey: #404040
+}
+::placeholder { 
+  color: inherit;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+}
+button,input{
+  transition: 0.3s;
+}
+button:hover,input:hover{
+  transform: scale(1.02,1.02);
+  transition: 0.3s;
+}
+
+svg{
+    transition: 0.3s;
+}
+svg:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+  transition: 0.3s;
+}

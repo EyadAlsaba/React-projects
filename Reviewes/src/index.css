@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #eee;
+  color: #333;
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+.arrow {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.arrow:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.reload-btn:hover {
+  background-color: #0dcaf0 !important;
+  opacity: 1 !important;
+  color: #eee !important;
+}
+
+.img-box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.img-box:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0dcaf0;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+.quote {
+  position: absolute;
+  top: 9.5rem;
+  right: 10rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  position: relative;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+@media (max-width: 1050px) {
+  .card {
+    width: 75% !important;
+  }
+  .text-card {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 920px) {
+  .card {
+    width: 95% !important;
+    padding: 1rem 3.5rem !important;
+  }
+  .text-card {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 3px;
+  margin: 3px;
+  letter-spacing: 1.3px;
+  font-family: "Comfortaa", cursive;
+}
+:root {
+  --purple: rgb(108, 0, 108);
+}
+body,
+#root {
+  height: 100vh;
+  background-color: #eee;
+  font-size: 1.5rem;
+  color: #333;
+}
+.header-box {
+  text-align: center;
+  border-bottom: 4px solid var(--purple);
+  width: 50vw;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  height: 15vh;
+}
+.btn {
+  padding: 1rem;
+  color: #eee;
+  background-color: var(--purple);
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  color: var(--purple);
+  background-color: inherit;
+  font-weight: bold;
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+  border: 1px solid var(--purple);
+}
+.content-box {
+  margin: 2rem;
+}
+.paragraph {
+  margin: 0.8rem 0;
+  letter-spacing: normal;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+.paragraph span {
+  font-weight: bold;
+  color: var(--purple);
+  font-size: 1.5rem;
+}
+.name {
+  background-color: #fff;
+  width: fit-content;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+.date {
+  color: var(--purple);
+  width: fit-content;
+  border-bottom: 1px solid var(--purple);
+  padding-bottom: 5px;
+}
