@@ -1,8 +1,44 @@
-:root{
-  --lightGrey: #f2f2f2
-  --grey: #404040
+img {
+  width: 150px;
+  height: 150px;
 }
-body {
-  background-color: var(--lightGrey);
-  color: var(--grey);
+
+.shake {
+  animation: shake 1s linear;
+}
+
+button {
+  width: fit-content !important;
+}
+
+.btn-control-dec:hover {
+  transition: .5s;
+  transform: translateY(8px)
+}
+
+.btn-control-inc:hover {
+  transition: .5s;
+  transform: translateY(-8px)
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(25deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
